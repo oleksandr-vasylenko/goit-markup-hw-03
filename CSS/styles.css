@@ -1,18 +1,4 @@
-/*
-dominant text color: #757575
-secondary tet color: #212121;
-accent text/background color: #2196F3
-white text color: #FFFFFF
-
-1-time used:
-hero-button hover background-color: #188ce8
-hero background-color: #2F303A
-team background-color: #F5F4FA
-footer background-color: #2F303A
-footer tel/e-mail text color: color: rgba(255, 255, 255, 0.6);
-*/
-
-/* ---------- VARIABLES ---------- */
+/* ---------- GENERAL ---------- */
 :root {
   --main-text: #757575;
   --white-text: #ffffff;
@@ -21,7 +7,16 @@ footer tel/e-mail text color: color: rgba(255, 255, 255, 0.6);
   --logo-font: 'Raleway', sans-serif;
 }
 
-/* ---------- GENERAL ---------- */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   background-color: #ffffff;
   color: var(--main-text);
