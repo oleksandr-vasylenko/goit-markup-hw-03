@@ -1,4 +1,4 @@
-/* ---------- GENERAL ---------- */
+/* --------------- GENERAL --------------- */
 :root {
   --main-text: #757575;
   --white-text: #ffffff;
@@ -11,10 +11,29 @@ html {
   box-sizing: border-box;
 }
 
+img {
+  display: block; /* need to clarify the reason why it is required */
+}
+
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
 }
 
 body {
@@ -45,8 +64,17 @@ body {
   overflow: hidden;
 }
 
-/* ---------- MAIN PAGE ---------- */
-/* ---------- HEADER ---------- */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto; /* need to clarify the reason why it is required */
+  outline: 1px solid red;
+}
+
+/* --------------- MAIN PAGE --------------- */
+
+/* --------------- HEADER --------------- */
 .header-logo {
   color: var(--secondary-text);
   font-family: var(--logo-font);
@@ -95,7 +123,7 @@ body {
   color: var(--accent);
 }
 
-/* ---------- MAIN ---------- */
+/* --------------- MAIN --------------- */
 .hero {
   background-color: #2f303a;
 }
@@ -118,7 +146,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -175,7 +203,7 @@ body {
   background-color: #f5f4fa;
 }
 
-/* ---------- FOOTER ---------- */
+/* --------------- FOOTER ---------------- */
 .footer {
   background-color: #2f303a;
 }
@@ -222,7 +250,7 @@ body {
   color: var(--accent);
 }
 
-/* ---------- PORTFOLIO PAGE ---------- */
+/* --------------- PORTFOLIO PAGE ---------------- */
 .port-filter-btn {
   color: var(--secondary-text);
   background-color: #f5f4fa;
