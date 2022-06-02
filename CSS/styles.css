@@ -141,6 +141,7 @@ a {
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
+  text-align: center;
 }
 
 .hero-title {
@@ -195,6 +196,7 @@ a {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-top: 94px;
   margin-bottom: 50px;
 }
 
