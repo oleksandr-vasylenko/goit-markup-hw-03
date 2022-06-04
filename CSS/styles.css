@@ -348,6 +348,8 @@ a {
 
 .portfolio-filter {
   margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 .port-filter-btn {
@@ -360,6 +362,11 @@ a {
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
+  height: 38px;
+}
+
+.portf-filter-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .port-filter-btn:hover,
@@ -368,8 +375,15 @@ a {
   background-color: var(--accent);
 }
 
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
 .portfolio-item {
   background-color: #eeeeee;
+  margin: 15px;
 }
 
 .portfolio-item-name {
@@ -379,6 +393,7 @@ a {
   letter-spacing: 0.06em;
   margin-top: 20px;
   margin-bottom: 4px;
+  padding-left: 24px;
 }
 
 .portfolio-item-service {
@@ -387,4 +402,5 @@ a {
   line-height: 1.88;
   letter-spacing: 0.03em;
   padding-bottom: 20px;
+  padding-left: 24px;
 }
