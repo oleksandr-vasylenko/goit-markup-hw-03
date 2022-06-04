@@ -5,6 +5,7 @@
   --secondary-text: #212121;
   --accent: #2196f3;
   --logo-font: 'Raleway', sans-serif;
+  --section-typ-padding: 94px;
 }
 
 html {
@@ -83,6 +84,7 @@ a {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 }
 
 .header .container {
@@ -199,8 +201,8 @@ a {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  min-width: 200px;
-  height: 50px;
+  padding: 10px 32px 10px 32px;
+  display: inline-block;
 }
 
 .hero-button:hover,
@@ -213,8 +215,8 @@ a {
 }
 
 .values {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: var(--section-typ-padding);
+  padding-bottom: var(--section-typ-padding);
 }
 
 .val-headline {
@@ -236,14 +238,22 @@ a {
   margin-right: 30px;
 }
 
-.services-title,
+.services-title {
+  color: var(--secondary-text);
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: var(--section-typ-padding);
+  margin-bottom: 50px;
+}
+
 .team-title {
   color: var(--secondary-text);
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 94px;
   margin-bottom: 50px;
 }
 
@@ -289,8 +299,8 @@ a {
 
 .team {
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: var(--section-typ-padding);
+  padding-bottom: var(--section-typ-padding);
 }
 
 /* --------------- FOOTER ---------------- */
@@ -342,8 +352,8 @@ a {
 /* --------------- PORTFOLIO PAGE ---------------- */
 
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: var(--section-typ-padding);
+  padding-bottom: var(--section-typ-padding);
 }
 
 .portfolio-filter {
@@ -362,7 +372,7 @@ a {
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
-  height: 38px;
+  padding: 6px;
 }
 
 .portf-filter-item:not(:last-child) {
@@ -382,8 +392,8 @@ a {
 }
 
 .portfolio-item {
-  background-color: #eeeeee;
   margin: 15px;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .portfolio-item-name {
@@ -391,9 +401,11 @@ a {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-top: 20px;
-  margin-bottom: 4px;
+  padding-top: 20px;
+  padding-bottom: 4px;
   padding-left: 24px;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .portfolio-item-service {
@@ -403,4 +415,6 @@ a {
   letter-spacing: 0.03em;
   padding-bottom: 20px;
   padding-left: 24px;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
