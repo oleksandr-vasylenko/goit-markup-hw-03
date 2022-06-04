@@ -73,7 +73,7 @@ a {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto; /* need to clarify the reason why it is required */
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 /* --------------- MAIN PAGE --------------- */
@@ -85,6 +85,11 @@ a {
   padding-bottom: 25px;
 }
 
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
 .header-logo {
   color: var(--secondary-text);
   font-family: var(--logo-font);
@@ -93,6 +98,7 @@ a {
   line-height: 1.19;
   letter-spacing: 0.03em;
   display: block;
+  margin-right: 93px;
 }
 
 .logo-blue {
@@ -100,6 +106,15 @@ a {
 }
 
 /* header-nav */
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .header-nav-link {
   color: var(--secondary-text);
   font-weight: 500;
@@ -107,6 +122,7 @@ a {
   line-height: 1.14;
   letter-spacing: 0.02em;
   display: block;
+  margin-right: not-lastchild 50px;
 }
 
 .header-nav-link:hover,
@@ -116,6 +132,10 @@ a {
 
 .header-nav-link.current {
   color: var(--accent);
+}
+
+.header-nav-list {
+  display: flex;
 }
 
 /* header-contacts */
@@ -136,6 +156,15 @@ a {
   color: var(--accent);
 }
 
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 /* --------------- MAIN --------------- */
 .hero {
   background-color: #2f303a;
@@ -149,10 +178,13 @@ a {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
+  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
+  width: 696px;
+  margin-inline: auto;
 }
 
 .hero-button {
@@ -167,11 +199,17 @@ a {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  min-width: 200px;
+  height: 50px;
 }
 
 .hero-button:hover,
 .hero-button:focus {
   background-color: #188ce8;
+}
+
+.values-list {
+  display: flex;
 }
 
 .values {
@@ -187,6 +225,15 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  width: 270px;
+}
+
+.services-images {
+  display: flex;
+}
+
+.services-img-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .services-title,
@@ -205,6 +252,19 @@ a {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  width: 270px;
+}
+
+.team-members {
+  display: flex;
+}
+
+.team-member-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-member-item {
+  background-color: var(--white-text);
 }
 
 .team-members-name {
