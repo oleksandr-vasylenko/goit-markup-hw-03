@@ -14,6 +14,8 @@ html {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 *,
@@ -73,7 +75,7 @@ a {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto; /* need to clarify the reason why it is required */
+  margin: 0 auto;
   /* outline: 1px solid red; */
 }
 
@@ -82,8 +84,6 @@ a {
 /* --------------- HEADER --------------- */
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -107,24 +107,20 @@ a {
   color: var(--accent);
 }
 
-/* header-nav */
-.header-nav {
-  display: flex;
-  align-items: center;
-}
-
 .header-nav-item:not(:last-child) {
   margin-right: 50px;
 }
 
 .header-nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--secondary-text);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  display: block;
-  margin-right: not-lastchild 50px;
 }
 
 .header-nav-link:hover,
@@ -163,8 +159,8 @@ a {
   margin-left: auto;
 }
 
-.header-contacts-item:not(:last-child) {
-  margin-right: 50px;
+.header-contacts .header-contacts-item + .header-contacts-item {
+  margin-left: 50px;
 }
 
 /* --------------- MAIN --------------- */
@@ -277,6 +273,11 @@ a {
   background-color: var(--white-text);
 }
 
+.team-member-item div {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .team-members-name {
   color: var(--secondary-text);
   font-weight: 500;
@@ -284,7 +285,6 @@ a {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -294,7 +294,6 @@ a {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 30px;
 }
 
 .team {
@@ -391,6 +390,12 @@ a {
   margin: -15px;
 }
 
+.portfolio-item div {
+  padding: 30px 24px;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+}
+
 .portfolio-item {
   margin: 15px;
   border-bottom: 1px solid #eeeeee;
@@ -401,11 +406,7 @@ a {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  padding-top: 20px;
   padding-bottom: 4px;
-  padding-left: 24px;
-  border-right: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
 }
 
 .portfolio-item-service {
@@ -413,8 +414,6 @@ a {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  padding-bottom: 20px;
-  padding-left: 24px;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
