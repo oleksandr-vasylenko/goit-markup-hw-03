@@ -166,15 +166,13 @@ a {
 /* --------------- MAIN --------------- */
 .hero {
   background-color: #2f303a;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 200px 452px 200px 452px;
   text-align: center;
-
-  outline: 1px solid red;
 }
 
 .hero .container {
-  outline: 1px solid red;
+  width: 696px;
+  text-align: center;
 }
 
 .hero-title {
@@ -182,15 +180,9 @@ a {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  /* align-items: center;*/
-  /* text-align: center; */
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
-  width: 696px;
-  /* margin-inline: auto; */
-
-  outline: 1px solid red;
 }
 
 .hero-button {
@@ -202,15 +194,7 @@ a {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-
   padding: 10px 32px 10px 32px;
-
-  /* display: flex; */
-  /* align-items: center;*/
-  /*  text-align: center; */
-  /* display: inline-block; */
-
-  outline: 1px solid red;
 }
 
 .hero-button:hover,
@@ -236,6 +220,10 @@ a {
   text-transform: uppercase;
   margin-bottom: 10px;
   width: 270px;
+}
+
+.values-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .services-images {
@@ -283,6 +271,8 @@ a {
 
 .team-member-item {
   background-color: var(--white-text);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-member-item div {
@@ -383,7 +373,9 @@ a {
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
-  padding: 6px;
+  padding: 6px 22px 6px 22px;
+  border-radius: 4px;
+  border: none;
 }
 
 .portf-filter-item:not(:last-child) {
@@ -403,7 +395,7 @@ a {
 }
 
 .portfolio-item div {
-  padding: 30px 24px;
+  padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
