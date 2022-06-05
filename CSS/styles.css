@@ -178,7 +178,6 @@ a {
 
 .hero .container {
   width: 696px;
-  text-align: center;
 }
 
 .hero-title {
@@ -391,17 +390,26 @@ a {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
+}
+
+.portfolio-item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.portfolio-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.portfolio-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
 
 .portfolio-item div {
   padding: 20px 24px;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
-}
-
-.portfolio-item {
-  margin: 15px;
   border-bottom: 1px solid #eeeeee;
 }
 
@@ -418,6 +426,4 @@ a {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  border-right: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
 }
