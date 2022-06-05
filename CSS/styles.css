@@ -79,6 +79,11 @@ a {
   /* outline: 1px solid red; */
 }
 
+.section {
+  padding-top: var(--section-typ-padding);
+  padding-bottom: var(--section-typ-padding);
+}
+
 /* --------------- MAIN PAGE --------------- */
 
 /* --------------- HEADER --------------- */
@@ -166,7 +171,8 @@ a {
 /* --------------- MAIN --------------- */
 .hero {
   background-color: #2f303a;
-  padding: 200px 452px 200px 452px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
 }
 
@@ -209,13 +215,10 @@ a {
   border: none;
 }
 
+/* --------------- VALUES/SERVICES --------------- */
 .values-list {
   display: flex;
-}
-
-.values {
-  padding-top: var(--section-typ-padding);
-  padding-bottom: var(--section-typ-padding);
+  margin-bottom: var(--section-typ-padding);
 }
 
 .val-headline {
@@ -233,33 +236,6 @@ a {
   margin-right: 30px;
 }
 
-.services-images {
-  display: flex;
-}
-
-.services-img-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.services-title {
-  color: var(--secondary-text);
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-top: var(--section-typ-padding);
-  margin-bottom: 50px;
-}
-
-.team-title {
-  color: var(--secondary-text);
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
-}
-
 .val-descr {
   color: var(--main-text);
   font-size: 14px;
@@ -268,6 +244,24 @@ a {
   width: 270px;
 }
 
+.services-images {
+  display: flex;
+}
+
+.services-img-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.title {
+  color: var(--secondary-text);
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+/* --------------- TEAM --------------- */
 .team-members {
   display: flex;
 }
@@ -307,8 +301,6 @@ a {
 
 .team {
   background-color: #f5f4fa;
-  padding-top: var(--section-typ-padding);
-  padding-bottom: var(--section-typ-padding);
 }
 
 /* --------------- FOOTER ---------------- */
@@ -337,7 +329,7 @@ a {
   display: block;
 }
 
-/* footer-contacts */
+/* FOOTER CONTACTS */
 .footer-mail,
 .footer-tel {
   color: rgba(255, 255, 255, 0.6);
@@ -346,8 +338,14 @@ a {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.footer-contacts {
   margin-top: 9px;
-  display: block;
+}
+
+.footer-contacts .footer-contacts-item + .footer-contacts-item {
+  margin-top: 9px;
 }
 
 .footer-mail:hover,
@@ -358,12 +356,6 @@ a {
 }
 
 /* --------------- PORTFOLIO PAGE ---------------- */
-
-.portfolio {
-  padding-top: var(--section-typ-padding);
-  padding-bottom: var(--section-typ-padding);
-}
-
 .portfolio-filter {
   margin-bottom: 50px;
   display: flex;
